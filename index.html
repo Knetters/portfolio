@@ -1,99 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Portfolio | Thomas Scheepers</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@30..200,24&display=swap");
-      
-      body {
-        scroll-snap-type: y mandatory;
-        margin: 0;
-      }
 
-      /* Header styling */
-      header {
-        margin: 0;
-        height: 100vh;
-        display: grid;
-        place-content: center;
-        background-color: #000;
-        scroll-snap-align: start;
-      }
+<head>
+  <title>Portfolio | Thomas Scheepers</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
 
-      h1 {
-        font-size: 12vw;
-        font-family: Nabla;
-      }
-
-      @font-palette-values --Nabla {
-        font-family: Nabla;
-        base-palette: 2;
-      }
-
-      span {
-        animation: depth 1s ease-in-out alternate infinite;
-        position: relative;
-        display: inline-block;
-        font-variation-settings: "EDPT" 30;
-        font-palette: --Nabla;
-        @for $i from 1 through 12 {
-          &:nth-child(#{$i}) {
-            animation-delay: $i * 0.1s;
-          }
-        }
-      }
-
-      @keyframes depth {
-        0% {
-          transform: translatex(0) translatey(0);
-        }
-        100% {
-          font-variation-settings: "EDPT" 200;
-          transform: translatex(0.15em) translatey(0.1em);
-        }
-      }
-      
-      /* info styling */
-      #info {
-        margin: 0;
-        height: 100vh;
-        display: grid;
-        background-color: hotpink;
-      }
-      
-      /* work styling */
-      #work {
-        margin: 0;
-        height: 100vh;
-        display: grid;
-        background-color: lightblue;
-      }
-      
-      /* footer styling */
-      footer {
-        margin: 0;
-        height: 100vh;
-        display: grid;
-        background-color: yellow;
-      }
-    </style>
-  </head>
 <body>
-  <header>
-    <h1><span>T</span><span>H</span><span>O</span><span>M</span><span>A</span><span>S</span></h1>
+
+  <header class="snap">
+    <article>
+      <h1>Thomas Scheepers</h1>
+      <p>&lt;/Hello there, welcome to my web-portfolio&gt;</p>
+    </article>
   </header>
-  
-  <section id="info">
+
+  <section id="info" class="snap">
     <h2>About me</h2>
   </section>
-  
-  <section id="work">
+
+  <section id="work" class="snap">
     <h2>My work</h2>
   </section>
-  
-  <footer>
+
+  <footer class="snap">
     <h2>Contact me</h2>
   </footer>
 
+
 </body>
+
 </html>
