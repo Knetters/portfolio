@@ -4,6 +4,10 @@
     <title>Portfolio | Thomas Scheepers</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@30..200,24&display=swap");
+      
+      body {
+        scroll-snap-type: y mandatory;
+      }
 
       /* Header styling */
       header {
@@ -12,6 +16,7 @@
         display: grid;
         place-content: center;
         background-color: #000;
+        scroll-snap-align: start;
       }
 
       h1 {
@@ -51,18 +56,21 @@
       #info {
         height: 100hv;
         background-color: hotpink;
+        scroll-snap-align: start;
       }
       
       /* work styling */
       #info {
         height: 100hv;
         background-color: lightblue;
+        scroll-snap-align: start;
       }
       
       /* footer styling */
       #info {
         height: 100hv;
         background-color: yellow;
+        scroll-snap-align: start;
       }
     </style>
   </head>
