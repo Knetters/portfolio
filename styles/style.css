@@ -1,88 +1,90 @@
-@import url("https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@30..200,24&display=swap");
-body, html {
-    margin: 0;
-    height: 100vh;
-    scroll-snap-type: y mandatory;
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap");
+
+body,
+html {
+  margin: 0;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
 }
 
 .wrapper {
-    margin: 0;
+  margin: 0;
 }
 
 .snap {
-    scroll-snap-align: start;
+  scroll-snap-align: start;
 }
 
-/* Header styling */
-header {
-    margin: 0;
-    height: 100vh;
-    display: grid;
-    place-content: center;
-    background-color: #000;
+/* start styling */
+#start {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 2fr 1fr 5fr;
+  grid-template-areas:
+    "title title title"
+    "info1 info2 info3"
+    "wrapper wrapper .";
+  background-color: black;
+  gap: 2em;
 }
 
-article {
-    background: linear-gradient(
-      to right, 
-      rgb(29, 192, 210), 
-      rgb(212, 13, 13)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 10vmin;
-    line-height: 1.4;
-  }
-  
-  header {
-    background: hsl(204 100% 5%);
-    
-    min-block-size: 100%;
-    min-inline-size: 100%;
-    box-sizing: border-box;
-    display: grid;
-    place-content: center;
-    font-family: system-ui;
-    font-size: min(200%, 5vmin);
-  }
-  
-  h1, p {
-    margin: 0;
-  }
-  
-  p {
-    font-family: "Dank Mono", ui-monospace, monospace;
-  }
-  
-  html {
-    block-size: 100%;
-    inline-size: 100%;
-  }
+.title {
+  grid-area: title;
+}
+
+.info-block-1 {
+  grid-area: info1;
+  margin: 10em;
+}
+
+.info-block-2 {
+  grid-area: info2;
+}
+
+.info-block-3 {
+  grid-area: info3;
+}
+
+.wrapper {
+  grid-area: wrapper;
+  border-radius: 0 100px 0 0;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 35%, rgba(183,243,255,1) 100%);
+}
+
+#start h1 {
+  color: #f1f1f1;
+  font-family: "Rajdhani";
+  font-size: 10em;
+  text-align: center;
+}
+
+#start p {
+  color: white;
+}
 
 /* info styling */
 #info {
-    margin: 0;
-    height: 100vh;
-    display: grid;
-    background-color: hotpink;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  background-color: hotpink;
 }
 
 /* work styling */
 #work {
-    margin: 0;
-    height: 100vh;
-    display: grid;
-    background-color: lightblue;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  background-color: lightblue;
 }
 
 /* footer styling */
 footer {
-    margin: 0;
-    height: 100vh;
-    display: grid;
-    background-color: yellow;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  background-color: yellow;
 }
