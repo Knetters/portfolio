@@ -60,7 +60,6 @@ html {
 }
 
 .p-element {
-  width: 100%;
   margin-left: 7em;
   font-size: 2em;
   font-family: monospace;
@@ -73,21 +72,18 @@ html {
 }
 
 .p-data {
-  padding-left: 2em;
-}
-
-.p-border {
-  border-left: solid grey 2px;
+  padding-left: 1.7em;
+  padding-right: .1em;
   margin: 0;
 }
 
 .typing {
-	border-right: .1em solid white;
+	border-right: 2px solid white;
 	width: calc(0.55em * 54); 
 	width: 54ch;
 	white-space: nowrap;
 	overflow: hidden;
-	-webkit-animation: typing 3s steps(54, end), blink-caret .5s step-end infinite alternate;
+	  -webkit-animation: typing 3s steps(54, end), blink-caret .5s step-end infinite alternate;
 }
 
 /* info styling */
@@ -95,6 +91,8 @@ html {
   margin: 0;
   height: 100vh;
   display: grid;
+  align-items: center;
+	justify-content: center;
   background-color: #5c85d6;
 }
 
@@ -103,6 +101,8 @@ html {
   margin: 0;
   height: 100vh;
   display: grid;
+  align-items: center;
+	justify-content: center;
   background-color: lightblue;
 }
 
@@ -111,5 +111,7 @@ footer {
   margin: 0;
   height: 100vh;
   display: grid;
+  align-items: center;
+	justify-content: center;
   background-color: yellow;
 }
