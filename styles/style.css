@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap");
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
 body,
 html {
@@ -23,31 +25,9 @@ html {
   background-color: transparent;
 }
 
-.nav {
-  display: flex;
-  float: right;
-  padding-right: 4em;
-  margin-left: auto; 
-  margin-right: 0;
-  width: 50%;
-}
-
 .name {
   padding-left: 4em;
   width: 50%;
-}
-
-.nav li {
-  display: flex;
-  justify-content: space-between;
-  align-items: right;
-  padding: 0 1em 0 1em;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 /* start styling */
@@ -55,49 +35,23 @@ html {
   margin: 0;
   height: 100vh;
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
-  grid-template-rows: 2fr 1fr 5fr;
-  grid-template-areas:
-    "title title title"
-    "info1 info2 info3"
-    "wrapper wrapper .";
-  background-color: black;
-  gap: 2em;
+  background-color: #262626;
 }
 
 .title {
-  grid-area: title;
-}
-
-.info-block-1 {
-  grid-area: info1;
-  margin: 10em;
-}
-
-.info-block-2 {
-  grid-area: info2;
-}
-
-.info-block-3 {
-  grid-area: info3;
-}
-
-.wrapper {
-  grid-area: wrapper;
-  border-radius: 0 100px 0 0;
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 35%, rgba(183,243,255,1) 100%);
+  height: 100vh;
+  width: 90%;
+  margin-left: 5%;
+	align-items: center;
+	justify-content: center;
 }
 
 #start h1 {
   color: #f1f1f1;
   font-size: 9em;
   text-align: center;
-}
-
-.header-title {
-  margin-top: .5em;
-  margin-bottom: .2em;
+  width: 100%;
+  margin-top: 1.5em;
   line-height: .8em;
 }
 
@@ -105,12 +59,43 @@ html {
   color: white;
 }
 
+.p-element {
+  width: 100%;
+  margin-left: 7em;
+  font-size: 2em;
+  font-family: monospace;
+}
+
+.p-tag {
+  color: #5c85d6;
+  margin: 0;
+  padding: 0;
+}
+
+.p-data {
+  padding-left: 2em;
+}
+
+.p-border {
+  border-left: solid grey 2px;
+  margin: 0;
+}
+
+.typing {
+	border-right: .1em solid white;
+	width: calc(0.55em * 54); 
+	width: 54ch;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 3s steps(54, end), blink-caret .5s step-end infinite alternate;
+}
+
 /* info styling */
 #info {
   margin: 0;
   height: 100vh;
   display: grid;
-  background-color: hotpink;
+  background-color: #5c85d6;
 }
 
 /* work styling */
