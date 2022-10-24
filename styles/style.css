@@ -93,7 +93,7 @@ html {
   display: grid;
   align-items: center;
 	justify-content: center;
-  background-color: #5c85d6;
+  background-color: #6D7074;
 }
 
 /* work styling */
@@ -113,5 +113,5 @@ footer {
   display: grid;
   align-items: center;
 	justify-content: center;
-  background-color: yellow;
+  background-color: #5c85d6;
 }
