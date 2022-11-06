@@ -4,20 +4,35 @@
 <head>
   <title>Portfolio | Thomas Scheepers</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="top-bar">
-    <div class="name">
-      <p>Thomas Scheepers</p>
+    <div class="inner-box">
+      <div class="name">
+        <p><a href="#start">Thomas Scheepers</a></p>
+      </div>
+      <div class="links">
+        <p><a href="./files/Thomas_Scheepers_Resume_2022.pdf" target="_blank" alt="D  ownload my CV">Download CV</a><a class="linkedIn-link" href="https://www.linkedin.com/in/thomas-scheepers-b83676187/" target="_blank" alt="View my linkedIn">LinkedIn</a></p>
+      </div>
     </div>
     
   </header>
 
   <section id="start" class="snap">
-    <div class="title">
-      <h1>FRONTEND DEVELOPER</h1>
-      <div class="p-element">
+    <div class="inner-box">
+      <div class="title">
+        <h1 data-aos="fade-right" data-aos-easing="ease-in-sine">FRONTEND <br/>DEVELOPER.</h1>
+        <div class="border-draw"></div>
+        <h2 data-aos="fade-left" data-aos-easing="ease-in-sine">Hello! My name is Thomas Scheepers. I am a frontend design and development student in Amsterdam.</h2>
+      </div>
+    </div>
+  </section>
+
+  <section id="info" class="snap">
+    <div class="inner-box">
+      <div class="p-element" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <span class="p-tag">&#60;p <span style="color: #9ecbf4">class</span><span style="color: #fff">=</span><span style="color: rgb(254, 125, 102)">"intro-text"</span>&#62;</span>
         <p class="p-data typing">Hello, my name is Thomas. Welcome to my web-portfolio!</p>
         <span class="p-tag">&#60;/p&#62;</span>
@@ -25,15 +40,22 @@
     </div>
   </section>
 
-  <section id="info" class="snap">
-  </section>
-
   <section id="work" class="snap">
+    <div class="inner-box">
+
+    </div>
   </section>
 
   <footer id="contact" class="snap">
+    <div class="inner-box">
+
+    </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
