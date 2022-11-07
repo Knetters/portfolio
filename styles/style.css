@@ -73,7 +73,7 @@ html {
   margin: 0;
   height: 100vh;
   display: grid;
-  background-color: #8cefb5;
+  background-color: #72DDF7;
 }
 
 #start h1 {
@@ -82,7 +82,7 @@ html {
   width: 100%;
   margin-top: 1.5em;
   line-height: .8em;
-  text-shadow: 4px 4px #DB5461;
+  text-shadow: 4px 4px #F4F4ED;
 }
 
 #start h2 {
