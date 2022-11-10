@@ -73,7 +73,7 @@ html {
   margin: 0;
   height: 100vh;
   display: grid;
-  background-color: #f3f772;
+  background-image: linear-gradient(to left top, #ebcb0a, #f0d831, #f5e54a, #faf261, #ffff76);
 }
 
 #start h1 {
@@ -82,7 +82,7 @@ html {
   width: 100%;
   margin-top: 1.5em;
   line-height: .8em;
-  text-shadow: 4px 4px #e6bb13;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 #start h2 {
@@ -94,7 +94,7 @@ html {
 }
 
 .border-draw {
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid rgb(0, 0, 0);
   width: 30%;
   margin-top: -5em;
   margin-bottom: 5em;
