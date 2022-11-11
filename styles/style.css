@@ -100,12 +100,21 @@ html {
   margin-bottom: 5em;
 }
 
+.arrow-down {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 5em;
+  margin-right: 5em;
+  width: 10em;
+}
+
 /* info styling */
 #info {
   margin: 0;
   height: 100vh;
   display: grid;
-  background-color: #262626;
+  background-color: black;
 }
 
 #info p {
